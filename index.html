@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" initial-scale="1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"> 
+    <title>Project Survey Form</title>
+  </head>
+  <body>
+    <div id="content">
+      <header>
+        <h1 id="title">1:1 Inquiry With Jarren</h1>
+        <p id="description">Thank you for your consideration in getting to learn from me</p>
+      </header>
+      <main>
+        <form id="survey-form">
+          <fieldset>
+            <label id="name-label" class="enterable">Your Name <input id="name" type="text" name="full-name" placeholder="Enter your full name" required ></label>
+          </fieldset>
+          <fieldset>
+            <label id="email-label" class="enterable">Your Email <input id="email" type="email" name="user-email" placeholder="Enter your email address" required></label>
+          </fieldset>
+          <fieldset>
+            <label id="number-label" class="enterable">Age <input id="number" type="number" name="age" min="14" max="70" placeholder="Age" required></label>
+          </fieldset>
+          <fieldset>
+            <label for="dropdown">What career pathway do you best align with?</label>
+            <select id="dropdown" name="pathway-description" required>
+              <option selected disabled value="">--select one--</option>
+              <option value="arts-and-communication">Arts & Communication</option>
+              <option value="health-and-sciences">Health & Sciences</option>
+              <option value="industrial-and-engineering-technology">Industrial & Engineering Technology</option>
+              <option value="natural-resources">Natural Resources</option>
+              <option value="professional-and-public-services">Professional & Public Services</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <label>What skills would you like to seek advice upon?</label>
+            <div class="skills-list">
+              <label><input type="checkbox" id="choice1" name="improve-skill" value="coding"> Coding</label>
+            </div>
+            <div class="skills-list">
+              <label><input type="checkbox" id="choice2" name="improve-skill" value="entrepreneurship"> Entrepreneurship</label>
+            </div>
+            <div class="skills-list">
+              <label><input type="checkbox" id="choice3" name="improve-skill" value="gym-and-fitness"> Gym & Fitness</label>
+            </div>
+            <div class="skills-list">
+              <label><input type="checkbox" id="choice4" name="improve-skill" value="league-of-legends"> League Of Legends</label>
+            </div>
+            <div class="skills-list">
+              <label><input type="checkbox" id="choice5" name="improve-skill" value="photography"> Photography</label>
+            </div>
+            <div class="skills-list">
+              <label><input type="checkbox" id="choice6" name="improve-skill" value="relationship"> Relationships</label>
+            </div>
+            <div class="skills-list">
+              <label><input type="checkbox" id="choice7" name="improve-skill" value="stocks"> Stocks</label>
+            </div>
+            <div class="skills-list">
+              <label><input type="checkbox" id="choice8" name="improve-skill" value="other"> Other</label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <label for="dropdown2">How much time are you looking to meet for?</label>
+            <select id="dropdown2" name="time-description" required>
+              <option selected disabled value="">--select one--</option>
+              <option value="15-30">15-30 minutes</option>
+              <option value="30-60">30-60 minutes</option>
+              <option value="60-120">1-2 hours</option>
+              <option value="121+">2+ hours</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <label>How would you like to meet?</label>
+            <label><input type="radio" name="meeting-option" value="in-person"> In-Person</label>
+            <label><input type="radio" name="meeting-option" value="teams"> Teams</label>
+            <label><input type="radio" name="meeting-option" value="zoom"> Zoom</label>
+          </fieldset>
+          <fieldset>
+            <label>Any preferable days & additional things that I should know?
+            <textarea name="" rows="3" cols="30" placeholder="Feel free to share anything with me..."></textarea>
+            </label>
+          </fieldset>
+          <input id="submit"type="submit" value="Submit" />
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
